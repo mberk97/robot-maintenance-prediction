@@ -13,13 +13,13 @@ from imblearn.over_sampling import SMOTE, RandomOverSampler
 from sklearn.model_selection import StratifiedKFold
 
 # Connect to SQLite database
-conn = sqlite3.connect('robot_maintenance.db')
+conn = sqlite3.connect('agv_db.db')
 cursor = conn.cursor()
 
 # Fetch all data, excluding potential data leakage columns with SQL
 query = """
     SELECT "Type", "Air temperature", "Process temperature", "Rotational speed", "Torque", "Tool wear", "Failure Type"
-    FROM data_test
+    FROM Test_table
     WHERE "Failure Type" IS NOT NULL;
 """
 cursor.execute(query)
