@@ -1,0 +1,5 @@
+sqlite3==0.0.1
+pandas==2.2.3
+numpy==2.1.2
+matplotlib==3.9.2
+scikit-learn==1.6.1
