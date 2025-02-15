@@ -46,3 +46,5 @@ Data is sourced from an SQLite database.
    ```sh
    git clone https://github.com/mberk97/robot-maintenance-prediction.git
    cd robot-maintenance-prediction
+   pip install -r requirements.txt
+   python main.py
